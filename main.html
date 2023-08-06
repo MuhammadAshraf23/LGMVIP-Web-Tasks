@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Link</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #heading-project {
+            color: #3DCFD3;
+            text-align: center;
+            font-size: 2.6em;
+            margin: 20px;
+        }
+
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .flip-card {
+            width: 23%;
+            margin: 12px;
+            height: 350px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+    
+        .flip-card-front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #070707;
+            color: white;
+            padding: 15px;
+        }
+
+        .flip-card-front h1 {
+            color: #3DCFD3;
+            margin-top: 40px;
+        }
+
+        .flip-card-front p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            line-height: 30px;
+        }
+
+        .button {
+            cursor: pointer;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #3DCFD3;
+            padding: 12px 25px;
+            border-radius: 20px;
+        }
+
+        .button:hover,
+        .button:active {
+            background-color: white;
+            color: #3DCFD3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="projects-section">
+        <h1 id="heading-project">LGMVIP Projects </h1>
+        <div id="projects">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>To-Do List</h1>
+                        <p>A Simple To Do List to manage your tasks using HTML , CSS and JavaScript</p>
+                        <a href="./Task 1/task1.html" target="_blank" class="button">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Web Application</h1>
+                        <p> A web application that collects data from an API and displays it on the user interface using HTML , CSS ,API and JavaScript</p>
+                        <a href="./Task 2/task2.html" target="_blank" class="button">Visit</a>
+                    </div>
+                </div>
+            </div><div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Student Registration Form</h1>
+                        <p>A Registration form whose data display on same pages using HTML , CSS and JavaScript</p>
+                        <a href="./Task 3/task3.html" target="_blank" class="button">Visit</a>
+                    </div>
+                </div>
+            </div><div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Calculator</h1>
+                        <p>A Simple Calculator using HTML , CSS and JavaScript</p>
+                        <a href="./Task 4/task4.html" target="_blank" class="button">Visit</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>
