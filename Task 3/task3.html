@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Student Enrollment Form</h2>
+    <div class="container">
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <label for="website">Website:</label>
+            <input type="url" id="website">
+            <label for="imgLink">Image Link:</label>
+            <input type="url" id="imgLink">
+            <div class="gender">
+                <label for="gender" style="margin-right: 17px;">Gender:</label>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender">
+            </div>
+            <div class="skill">
+                <label for="skills" style="margin-right: 17px;">Skills:</label>
+                <label for="html">HTML</label>
+                <input type="checkbox" id="html" name="skills">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="css" name="skills">
+                <label for="js">JS</label>
+                <input type="checkbox" id="js" name="skills">
+            </div>
+            <div class="buttons">
+                <button id="enroll">Enroll Student</button>
+                <button id="clear">Clear</button>
+            </div>
+        </div>
+        <hr class="vertical_line">
+        <div class="result">
+            <h3>Enrollment Students</h3>
+            <div class="heading">
+                <h4>Descriptions</h4>
+                <h4>Images</h4>
+            </div>
+            <div id="StudentDetail" style="display: none;">
+                <div class="description">
+ 
+                </div>
+                 <!-- image fetch using js -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
