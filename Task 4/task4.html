@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Working</h1>
+    <h1 style="text-align: center; color: white;">Simple Calculator</h1>
+    <div class="cntainer">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="input">
+            <div class="row">
+                <button onclick="Clear()">AC</button>
+                <button onclick="del()">DEL</button>
+                <button onclick="display('%')">%</button>
+                <button onclick="display('/')">/</button>
+                <div class="row">
+                    <button onclick="display('7')">7</button>
+                    <button onclick="display('8')">8</button>
+                    <button onclick="display('9')">9</button>
+                    <button onclick="display('*')">x</button>
+                </div>
+                <div class="row">
+                    <button onclick="display('4')">4</button>
+                    <button onclick="display('5')">5</button>
+                    <button onclick="display('6')">6</button>
+                    <button onclick="display('-')">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="display('1')">1</button>
+                    <button onclick="display('2')">2</button>
+                    <button onclick="display('3')">3</button>
+                    <button onclick="display('+')">+</button>
+                </div>
+                <div class="row">
+                    <button onclick="display('.')" style="font-weight: bolder;">.</button>
+                    <button onclick="display('0')">0</button>
+                    <button onclick="Calculate()" class="equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
